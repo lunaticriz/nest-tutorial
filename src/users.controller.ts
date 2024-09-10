@@ -5,6 +5,7 @@ import { UserDTO } from './DTO';
 let users = [];
 @Controller('/users')
 export class UserController {
+  // Create a user
   @Post('create-user')
   addUser(@Body() createUserDto: UserDTO) {
     users.push(createUserDto);
